@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+body {
+  font: 100% Roboto, sans-serif;
+  background: linear-gradient(315deg, #a1e57e 0%, #04442c 100%);
+  /*background-color: #5c7f6e;*/
+}
+
+nav {
+  top: 20%;
+  position: fixed;
+  width: 200px;
+  background: white;
+  color: #281300;
+  -webkit-clip-path: circle(24px at 30px 24px);
+  clip-path: circle(24px at 32px 24px);
+  -webkit-transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+  transition: -webkit-clip-path 0.5625s, clip-path 0.375s;
+  border-radius: 20px;
+}
+
+nav:hover {
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  -webkit-clip-path: circle(390px at 225px 24px);
+  clip-path: circle(390px at 150px 24px);
+}
+
+a {
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: inherit;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration: none;
+}
+
+a:hover {
+  background: #ffe082;
+  border-radius: 20px;
+}
+
+a:active {
+  background: #ffca28;
+}
+
+.navicon {
+  padding: 23px 22px;
+  cursor: pointer;
+  -webkit-transform-origin: 32px 24px;
+  -ms-transform-origin: 32px 24px;
+  transform-origin: 32px 24px;
+}
+
+.navicon div {
+  position: relative;
+  border-radius: 3px;
+  width: 20px;
+  height: 3px;
+  background: #281300;
+}
+
+.navicon div:before,
+.navicon div:after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background: #281300;
+  position: absolute;
+}
+
+.navicon div:before {
+  bottom: 7px;
+}
+
+.navicon div:after {
+  top: 7px;
+}

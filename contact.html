@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <!--Linking this HTML to the CSS, giving it Responsive attributes and adding a small Google tab icon-->
+    <link rel="stylesheet" href="./topbar.css" />
+    <link rel="stylesheet" href="./sidebar.css" />
+    <link rel="stylesheet" href="./form.css" />
+    <link rel="stylesheet" href="./socialmedia.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta content="charset=UTF-8" />
+    <!--Small icon in the Google tab-->
+    <link rel="icon" href="./img/marijuana.png" />
+    <!--Making it responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <!--Main nav bar that will stay in top all the time-->
+    <section id="topnav">
+      <img id="navLogo" src="./img/nameLogo4.png" />
+      <a id="nav-link" href="./index.html">Portada</a>
+      <a id="nav-link" class="btn noHover">|</a>
+      <a id="nav-link" href="./catalogue.html">Catálogo</a>
+      <a id="nav-link" class="btn noHover">|</a>
+      <a id="nav-link" href="./ubication.html">Ubicación</a>
+      <a id="nav-link" class="btn noHover">|</a>
+      <a id="nav-link" href="./contact.html">Contacto</a>
+    </section>
+    <!--contact form-->
+    <form action="/" class="decor">
+      <div class="form-left-decoration"></div>
+      <div class="form-right-decoration"></div>
+      <div class="circle"></div>
+      <div class="circleRight"></div>
+      <div class="form-inner">
+        <h1 style="font-weight: bolder">Contáctanos</h1>
+        <input type="text" placeholder="Nombre" />
+        <input type="email" placeholder="Correo Electrónico" />
+        <textarea placeholder="Mensaje..." rows="5"></textarea>
+        <button type="submit" href="/">Enviar</button>
+      </div>
+    </form>
+    <!--Social media-->
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a  class="phone noHover"><img width="20px" height="20px" style="position:absolute;left:-5px; top:15px;" src="./img/phoneIcon.png">+34 600 00 00 00</a>
+    <!--Side bar that will follow you while scrolling down, always the last part of code to be in front--->
+    <nav>
+      <div class="navicon">
+        <div></div>
+      </div>
+      <a href="./index.html"
+        ><img width="20px" height="20px" src="./img/portadaIcon.png" />
+        Portada</a
+      >
+      <a href="./catalogue.html"
+        ><img width="20px" height="20px" src="./img/marijuana.png" />
+        Catálogo</a
+      >
+      <a href="./ubication.html"
+        ><img width="18px" height="22px" src="./img/ubicIcon.png" />
+        Ubicación</a
+      >
+      <a href="./contact.html"
+        ><img width="20px" height="20px" src="./img/phoneIcon.png" />
+        Contacto</a
+      >
+    </nav>
+    <!--Linking this page to its correspodent Js-->
+    <script src="./contact.js"></script>
+  </body>
+</html>

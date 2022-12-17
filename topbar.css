@@ -1,0 +1,106 @@
+#topnav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(270deg, #c98411 50%, #281300 80%);
+}
+
+.noHover {
+  pointer-events: none;
+}
+
+.nav-link {
+  display: inline-block;
+  width: 100px;
+  height: 55px;
+  font-weight: bolder;
+  color: #281300;
+  letter-spacing: 3px;
+
+  /* centering text */
+  text-align: center; /* horizontally */
+  line-height: 55px; /* vertically */
+
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  background: #eca021;
+  border-radius: 0;
+}
+
+#navLogo {
+  position: absolute;
+  left: 1%;
+  top: 15%;
+  size: 50%;
+  width: 350px;
+  height: 40px;
+}
+
+/*Computer*/
+@media (min-width: 1100px) {
+  form {
+    width: 60%;
+  }
+  nav{
+    display:none;
+  }
+  .topnav{
+    display:flex;
+  }
+
+  ul{
+    position: absolute; 
+    margin-top: 18vw;
+  }
+}
+/*Tablets and phones*/
+@media (max-width: 1100px) {
+    
+   .facebook{
+    position: absolute;
+        right:5%;
+        bottom:2%;
+   }
+   .whatsapp{
+    position: absolute;
+        right:5%;
+        bottom:2%;
+   }
+   .facebook{
+    position: absolute;
+        right:5%;
+        bottom:2%;
+   }
+    nav{
+        display:block;
+        position: absolute;
+        left:2%;
+        top:10%;
+    }
+    .navLogo{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .navicon{
+        bottom:5%;
+    }
+    #nav-link{
+        display:none;
+    }
+    h1{
+        position: absolute;
+        right:5%;
+        top:2%;
+    }
+    form{
+        padding:20px;
+        background: linear-gradient(270deg, #c98411 40%, #281300 100%);
+    }
+  }
+

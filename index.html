@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <!--Linking this HTML to the CSS, giving it Responsive attributes and adding a small Google tab icon-->
+    <link rel="stylesheet" href="./topbar.css" />
+    <link rel="stylesheet" href="./sidebar.css" />
+    <meta content="charset=UTF-8" />
+
+    <!--Small icon in the Google tab-->
+    <link rel="icon" href="./img/marijuana.png" />
+    <!--Making it responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portada</title>
+  </head>
+  <body>
+    <!--Main nav bar that will stay in top all the time-->
+    <section id="topnav">
+      <img id="navLogo" src="./img/nameLogo4.png" />
+      <a class="nav-link" href="./index.html">Portada</a>
+      <a class="btn noHover">|</a>
+      <a class="nav-link" href="./catalogue.html">Catálogo</a>
+      <a class="btn noHover">|</a>
+      <a class="nav-link" href="./ubication.html">Ubicación</a>
+      <a class="btn noHover">|</a>
+      <a class="nav-link" href="./contact.html">Contacto</a>
+    </section>
+    <!--news, who we are or something like that-->
+    <!--Side bar that will follow you while scrolling down, always the last part of code to be in front--->
+    <nav>
+      <div class="navicon">
+        <div></div>
+      </div>
+      <a href="./index.html"
+        ><img width="20px" height="20px" src="./img/portadaIcon.png" />
+        Portada</a
+      >
+      <a href="./catalogue.html"
+        ><img width="20px" height="20px" src="./img/marijuana.png" />
+        Catálogo</a
+      >
+      <a href="./ubication.html"
+        ><img width="18px" height="22px" src="./img/ubicIcon.png" />
+        Ubicación</a
+      >
+      <a href="./contact.html"
+        ><img width="20px" height="20px" src="./img/phoneIcon.png" />
+        Contacto</a
+      >
+    </nav>
+    <!--Linking this page to its correspodent Js-->
+    <script src="./index.js"></script>
+  </body>
+</html>

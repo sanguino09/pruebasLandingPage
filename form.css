@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+input,
+textarea {
+  outline: none;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  overflow: hidden; /* Hide scrollbars */
+}
+h1 {
+  margin-top: 0;
+  margin-left: 70%;
+  font-weight: 500;
+}
+form {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 80%;
+  border-radius: 30px;
+  background: linear-gradient(270deg, #c98411 30%, #281300 80%);
+}
+.form-left-decoration,
+.form-right-decoration {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 20px;
+   background: linear-gradient(90deg, #c98411 10%, #281300 30%);
+}
+.form-left-decoration {
+  bottom: 60px;
+  left: -30px;
+  background: linear-gradient(270deg, #281300 10%, #c98411 30%);
+}
+.form-right-decoration {
+  top: 60px;
+  right: -30px;
+}
+.form-left-decoration:before,
+.form-left-decoration:after,
+.form-right-decoration:before,
+.form-right-decoration:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  border-radius: 30px;
+  background: #c98411;
+}
+.form-left-decoration:before,
+.form-left-decoration:after {
+  background:#281300;
+}
+
+.form-left-decoration:before {
+  top: -20px;
+}
+.form-left-decoration:after {
+  top: 20px;
+  left: 10px;
+}
+.form-right-decoration:before {
+  top: -20px;
+  right: 0;
+}
+.form-right-decoration:after {
+  top: 20px;
+  right: 10px;
+}
+.circle {
+  position: absolute;
+  bottom: 80px;
+  left: -55px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #281300;
+}
+.circleRight {
+  position: absolute;
+  top:40px;
+  right: -60px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #c98411;
+}
+.form-inner {
+  padding: 40px;
+}
+.form-inner input,
+.form-inner textarea {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 20px;
+  background: #d0dfe8;
+}
+.form-inner textarea {
+  resize: none;
+}
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  border-bottom: 4px solid #3e4f24;
+  background: #5a7233;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+button:hover {
+  background: #3e4f24;
+}
+/*Computer*/
+@media (min-width: 1100px) {
+  form {
+    width: 60%;
+  }
+  nav {
+    display: none;
+  }
+}
+/*Tablets and phones*/
+@media (max-width: 1100px) {
+  nav {
+    display: block;
+    position: absolute;
+    left: 2%;
+    top: 10%;
+  }
+  .navLogo {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top:10px;
+  }
+  .navicon {
+    bottom: 5%;
+  }
+  #nav-link {
+    display: none;
+  }
+  h1 {
+    position: absolute;
+    right: 5%;
+    top: 2%;
+  }
+  form {
+    padding: 20px;
+    background: linear-gradient(270deg, #c98411 40%, #281300 100%);
+  }
+}
